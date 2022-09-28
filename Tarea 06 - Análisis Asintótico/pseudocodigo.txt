@@ -1,0 +1,22 @@
+Algoritmo BusquedaLineal
+
+    Entradas vector[n], num
+    Salida encontrado 
+
+InicioAlgoritmo
+
+	i <- 0  //1
+    encontrado <- 0  //1
+	
+    Mientras (i < n-1 ) Y (vector[i] <> num) Hacer  //4n
+		i <- i+1  //n-1
+	Fin Mientras
+	
+	Si vector[i] = num Entonces //1
+		Entonces encontrado <- 1 //1 
+	
+    Devolver encontrado //1
+
+FinAlgoritmo
+
+//T(n) = 1 + 1 + 4n + (n-1) + 1 + 1 + 1 = 5n + 4
